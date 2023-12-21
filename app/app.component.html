@@ -1,0 +1,9 @@
+<app-camping-invoer (campingcreate)="oncampingcreated($event)"></app-camping-invoer>
+<app-camping [campinglist]="Campings"></app-camping>
+<br><br>
+<app-camping-registratie (campingRegistratieCreate)="oncampingRegistratieCreated($event)"></app-camping-registratie>
+<app-camping [campingRegistratieList]="registratie"></app-camping>
+<app-parent [invoerwaarde]="invoer"></app-parent>
+<app-child (uitvoerCreate)="onchildInvoerCreated($event)"></app-child>
+<app-blad1 (uitvoerCreate)="onblad1AdresCreated($event)"></app-blad1>
+<app-blad2 [Adreswaarde]="Adres"></app-blad2>
